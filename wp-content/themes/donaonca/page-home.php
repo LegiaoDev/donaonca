@@ -98,7 +98,7 @@
         *******Lançamentos*******
         *************************
         -->
-        <div class="produtos-home-array" id="mais-vendidos">
+        <div class="produtos-home-array" id="mais-vendidos"> <!-- Mais vendidos -->
             <h2 class="titulo-lista-produto">Mais vendidos</h2>
             <?php
                $args = array(
@@ -106,11 +106,11 @@
                    'posts_per_page' => 4,
                    'meta_key' => 'total_sales',
                    'orderby' => 'meta_value_num',
-               );
+               ); // Argumentos para array
                
-               $loop = new WP_Query( $args );
+               $loop = new WP_Query( $args ); // Cria uma WP_Query nova com base nos argumentos de $args
                
-               if ( $loop->have_posts() ) {
+               if ( $loop->have_posts() ) {  // Inicia loop
                    while ( $loop->have_posts() ) : $loop->the_post();
                        woocommerce_get_template_part( 'content', 'product' );
                    endwhile;
@@ -119,7 +119,7 @@
                }
                wp_reset_postdata();
             ?>
-        </div>
+        </div> <!-- Mais vendidos -->
 
 
     </div> <!-- Fecha container -->
