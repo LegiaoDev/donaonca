@@ -38,5 +38,27 @@
                 echo '</ul>'; // Fecha a lista <ul>
             }
         ?>
+        <!-- 
+        *************************
+        *******Banners fixos*******
+        *************************
+        -->
+        <div class="banners-fixos">
+            <div class="banner-fixo" id="banner-fixo1">
+                <a href="#">
+                    <img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner-fixo.png" alt="">
+                </a>
+            </div>
+            <div class="banner-fixo" id="banner-fixo2">
+                <a href="#">
+                    <img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner-fixo.png" alt="">
+                </a>
+            </div>
+            <div class="banner-fixo" id="banner-fixo3">
+                <a href="#">
+                    <img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner-fixo.png" alt="">
+                </a>
+            </div>
+        </div>
     </div> <!-- Fecha container -->
 <?php get_footer(); ?>
