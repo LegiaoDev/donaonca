@@ -66,6 +66,7 @@
         *************************
         -->
         <div class="lancamentos-array">
+            <h2 class="titulo-lista-produto">Lançamentos</h2>
             <?php
                 $args = array(
                     'post_type' => 'product',
