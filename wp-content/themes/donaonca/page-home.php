@@ -65,7 +65,7 @@
         *******Lançamentos*******
         *************************
         -->
-        <div class="lancamentos-array">
+        <div class="produtos-home-array" id="lancamentos">
             <h2 class="titulo-lista-produto">Lançamentos</h2>
             <?php
                 $args = array(
@@ -90,6 +90,34 @@
                     </div><!-- /span3 -->
                 <?php endwhile; ?>
                 <?php wp_reset_query(); 
+            ?>
+        </div>
+
+        <!-- 
+        *************************
+        *******Lançamentos*******
+        *************************
+        -->
+        <div class="produtos-home-array" id="mais-vendidos">
+            <h2 class="titulo-lista-produto">Mais vendidos</h2>
+            <?php
+               $args = array(
+                   'post_type' => 'product',
+                   'posts_per_page' => 4,
+                   'meta_key' => 'total_sales',
+                   'orderby' => 'meta_value_num',
+               );
+               
+               $loop = new WP_Query( $args );
+               
+               if ( $loop->have_posts() ) {
+                   while ( $loop->have_posts() ) : $loop->the_post();
+                       woocommerce_get_template_part( 'content', 'product' );
+                   endwhile;
+               } else {
+                   echo __( 'No products found' );
+               }
+               wp_reset_postdata();
             ?>
         </div>
 
