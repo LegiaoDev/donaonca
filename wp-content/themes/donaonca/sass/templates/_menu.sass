@@ -1,0 +1,68 @@
+@import '_mixins'
+
+.top-nav-menu
+	display: flex
+	width: 97vw
+	margin: 0 auto
+	justify-content: space-between
+	align-items: center
+	padding: 10px 0
+
+	.logo-top-nav-menu
+		width: 140px
+		height: auto
+
+	.icones-top-menu
+		display: flex
+
+
+		a
+			color: $cinza
+			text-decoration: none
+			&:hover
+				opacity: 0.7
+
+		[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+		[class^="flaticon-"]:after, [class*=" flaticon-"]:after
+			margin: 0 4px
+			text-align: center
+			font-size: 30px
+
+	
+	.formBusca
+		display: flex
+		align-items: center
+		width: 50vw
+
+		div
+			width: 90%
+			display: flex
+			align-items: center
+			border-radius: 5px
+			padding: 8px 0
+			@include box-shadow(2px, 3px, 5px, rgba(0,0,0,0.2))
+
+			input
+				width: 90%
+				margin-left: 10px
+				border: 1px solid white
+				padding: 5px
+
+.dona-onca-menu
+	background: $rosa
+	display: flex
+	list-style: none
+	padding: 25px 0
+	justify-content: center
+	font-family: $raleway
+
+	li 
+		margin: 0 15px
+
+		a
+			text-transform: uppercase
+			color: $cinza
+			text-decoration: none
+
+
+	
