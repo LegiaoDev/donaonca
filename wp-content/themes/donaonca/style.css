@@ -62,7 +62,7 @@
 }
 
 .dona-onca-menu {
-  background: #f7dde0;
+  background: #FFDEE1;
   display: flex;
   list-style: none;
   padding: 25px 0;
@@ -95,6 +95,42 @@
 .banners #banner1 {
   background: url("http://local.donaonca.com/wp-content/uploads/2018/10/banner.png") center center;
   background-size: cover;
+}
+
+.categoria-home {
+  border: 3px dashed #D4448B;
+  color: #D4448B;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 15px 0;
+}
+.categoria-home .categoria-item-home {
+  color: #D4448B;
+  margin: 0 15px;
+  font-family: "Raleway", sans-serif;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+.categoria-home .categoria-item-home:first-child {
+  list-style-type: none;
+}
+.categoria-home .categoria-item-home:hover {
+  border: 1px solid #D4448B;
+}
+.categoria-home .categoria-item-home a {
+  text-decoration: none;
+  color: #D4448B;
+}
+
+.container {
+  width: 1240px;
+  max-width: 80vw;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

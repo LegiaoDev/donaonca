@@ -27,9 +27,9 @@
             );   // Argumentos das categorias
             $categoria_produtos = get_terms( 'product_cat', $args_categoria );  // Pega a categoria
             if( !empty($categoria_produtos) ){
-                echo ' <ul>'; // Se $categoria_produtos não estiver vazia (se existem categorias) abrir tag <ul>
+                echo ' <ul class="categoria-home">'; // Se $categoria_produtos não estiver vazia (se existem categorias) abrir tag <ul>
                 foreach ($categoria_produtos as $key => $categoria) { // Monta foreach para categorias
-                    echo ' <li>'; // Cria a tag <li>
+                    echo ' <li class="categoria-item-home">'; // Cria a tag <li>
                     echo '<a href="'.get_term_link($categoria).'" >'; // Inseri o link para a categoria
                     echo $categoria->name; // Inseri o nome da categoria
                     echo '</a>'; // Fecha a tag <a>
