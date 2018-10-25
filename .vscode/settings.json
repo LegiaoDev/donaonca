@@ -3,4 +3,5 @@
 	"editor.fontFamily": "Calibri",
 	"editor.tabSize": 4,
 	"editor.wordWrap": "on",
+	"terminal.integrated.shell.windows": "D:\\Programas\\laragon\\bin\\cmder\\Cmder.exe",
 }

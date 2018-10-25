@@ -133,4 +133,16 @@
   border: 1px solid red;
 }
 
+.banners-fixos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1%;
+}
+.banners-fixos .banner-fixo {
+  max-width: 100%;
+}
+.banners-fixos .banner-fixo a img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
