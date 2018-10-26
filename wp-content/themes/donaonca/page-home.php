@@ -65,8 +65,11 @@
         *******Lançamentos*******
         *************************
         -->
-        <div class="produtos-home-array" id="lancamentos">
+        <div class="titulo-secao">
             <h2 class="titulo-lista-produto">Lançamentos</h2>
+            <span class="barra-titulo"></span>
+        </div>
+        <div class="produtos-home-array" id="lancamentos">
             <?php
                 $args = array(
                     'post_type' => 'product',
@@ -77,16 +80,22 @@
                 );
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                    <div class="span3">
+                    <div class="produto">
                         <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                             <?php
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
                             <h3><?php the_title(); ?></h3>
-                            <span class="price"><?php echo $product->get_price_html(); ?></span>
+                            <div class="valor">
+                                <?php 
+                                    $preco =  $product->get_price();
+                                    $parcela = floatval( $preco)/12;
+                                    echo "<p>12x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                    // echo gettype($parcela);
+                                ?>
+                            </div>
                         </a>
-                        <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
                     </div><!-- /span3 -->
                 <?php endwhile; ?>
                 <?php wp_reset_query(); 
@@ -98,28 +107,42 @@
         *******Lançamentos*******
         *************************
         -->
-        <div class="produtos-home-array" id="mais-vendidos"> <!-- Mais vendidos -->
-            <h2 class="titulo-lista-produto">Mais vendidos</h2>
+        <div class="titulo-secao">
+            <h2 class="titulo-lista-produto">Lançamentos</h2>
+            <span class="barra-titulo"></span>
+        </div>
+        <div class="produtos-home-array" id="lancamentos">
             <?php
-               $args = array(
-                   'post_type' => 'product',
-                   'posts_per_page' => 4,
-                   'meta_key' => 'total_sales',
-                   'orderby' => 'meta_value_num',
-               ); // Argumentos para array
-               
-               $loop = new WP_Query( $args ); // Cria uma WP_Query nova com base nos argumentos de $args
-               
-               if ( $loop->have_posts() ) {  // Inicia loop
-                   while ( $loop->have_posts() ) : $loop->the_post();
-                       woocommerce_get_template_part( 'content', 'product' );
-                   endwhile;
-               } else {
-                   echo __( 'No products found' );
-               }
-               wp_reset_postdata();
+                $args = array(
+                    'post_type' => 'product',
+                    'stock' => 1,
+                    'posts_per_page' => 4,
+                    'meta_key' => 'total_sales',
+                    'orderby' => 'meta_value_num',
+                );
+                $loop = new WP_Query( $args );
+                while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                    <div class="produto">
+                        <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                            <?php
+                                if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
+                                else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
+                            ?>
+                            <h3><?php the_title(); ?></h3>
+                            <div class="valor">
+                                <?php 
+                                    $preco =  $product->get_price();
+                                    $parcela = floatval( $preco)/12;
+                                    echo "<p>12x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                    // echo gettype($parcela);
+                                ?>
+                            </div>
+                        </a>
+                    </div><!-- /span3 -->
+                <?php endwhile; ?>
+                <?php wp_reset_query(); 
             ?>
-        </div> <!-- Mais vendidos -->
+        </div>
 
 
     </div> <!-- Fecha container -->

@@ -10,7 +10,11 @@
  * Version: 0.0.1
  *
  * */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,900");
 .top-nav-menu {
   display: flex;
   width: 97vw;
@@ -126,11 +130,30 @@
   color: #D4448B;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
 .container {
   width: 1240px;
   max-width: 80vw;
   margin: 0 auto;
   border: 1px solid red;
+}
+.container .titulo-secao {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container .titulo-secao .barra-titulo {
+  display: block;
+  width: 20%;
+  height: 1px;
+  border-bottom: 1px dashed #4A4A4A;
 }
 
 .banners-fixos {
@@ -143,6 +166,62 @@
 }
 .banners-fixos .banner-fixo a img {
   width: 100%;
+}
+
+.produtos-home-array {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 50px 0;
+}
+.produtos-home-array .produto {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.produtos-home-array .produto:hover {
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: all 200ms ease-in;
+  transform: scale(1.05);
+}
+.produtos-home-array .produto a {
+  text-decoration: none;
+}
+.produtos-home-array .produto a img {
+  width: 100%;
+}
+.produtos-home-array .produto h3 {
+  color: #6E6E6E;
+  font-weight: 600;
+}
+.produtos-home-array .produto .valor {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+.produtos-home-array .produto .valor p {
+  font-size: 15px;
+  font-weight: 200;
+  color: #6E6E6E;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+.produtos-home-array .produto .valor .preco {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  color: #4A4A4A;
+  text-decoration: none;
+  margin-left: 10px;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
