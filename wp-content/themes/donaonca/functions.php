@@ -9,11 +9,11 @@
 	add_action('wp_enqueue_scripts', 'donaonca_scripts');
 
 	// Suporte woocommerce
-	add_action( ‘after_setup_theme’,’woocommerce_support’ );
-
-	function woocommerce_support() {
-		add_theme_support( ‘woocommerce’ );
+	function mytheme_add_woocommerce_support() {
+		add_theme_support( 'woocommerce' );
 	}
+	add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
 
 	// Menus
 	register_nav_menus(array(

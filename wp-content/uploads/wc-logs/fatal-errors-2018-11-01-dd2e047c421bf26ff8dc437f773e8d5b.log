@@ -1,0 +1,37 @@
+2018-11-01T18:45:46+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::the_price() in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php:27
+Stack trace:
+#0 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1450): wc_get_template('single-product/...')
+#2 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(286): woocommerce_template_single_price('')
+#3 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 D:\Programas\laragon\www\donaonca\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\templates\content-single-product.php(58): do_action('woocommerce_sin...')
+#6 D:\Programas\laragon\www\donaonca\wp-includes\template.php(690): require('D:\\Programas\\la...')
+#7 D:\Programas\la
+
+2018-11-01T20:18:24+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')' in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\product-image.php on line 15
+
+2018-11-01T20:18:34+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\product-image.php:9
+Stack trace:
+#0 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-core-functions.php(208): include()
+#1 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1368): wc_get_template('single-product/...')
+#2 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(286): woocommerce_show_product_images('')
+#3 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 D:\Programas\laragon\www\donaonca\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\templates\content-single-product.php(41): do_action('woocommerce_bef...')
+#6 D:\Programas\laragon\www\donaonca\wp-includes\template.php(690): require('D:\\Programas\\la...')
+#7 D:\Programas\laragon\ww in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\product-image.php on line 9
+
+2018-11-01T20:19:09+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\product-image.php:9
+Stack trace:
+#0 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-core-functions.php(208): include()
+#1 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1368): wc_get_template('single-product/...')
+#2 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(286): woocommerce_show_product_images('')
+#3 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 D:\Programas\laragon\www\donaonca\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\templates\content-single-product.php(41): do_action('woocommerce_bef...')
+#6 D:\Programas\laragon\www\donaonca\wp-includes\template.php(690): require('D:\\Programas\\la...')
+#7 D:\Programas\laragon\ww in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\product-image.php on line 9
+
+2018-11-01T20:21:31+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\product-image.php on line 10
+

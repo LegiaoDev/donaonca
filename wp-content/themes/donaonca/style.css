@@ -199,14 +199,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #6E6E6E;
   font-weight: 600;
 }
-.produtos-home-array .produto .valor {
+
+.valor {
   display: flex;
   justify-content: flex-start;
   font-family: "Roboto", sans-serif;
   align-items: flex-end;
   margin-top: 5px;
 }
-.produtos-home-array .produto .valor p {
+.valor p {
   font-size: 15px;
   font-weight: 200;
   color: #6E6E6E;
@@ -214,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   align-self: flex-end;
 }
-.produtos-home-array .produto .valor .preco {
+.valor .preco {
   font-family: "Roboto", sans-serif;
   font-size: 35px;
   font-weight: 900;
@@ -222,6 +223,21 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   margin-left: 10px;
   align-self: flex-end;
+}
+
+.preco-produto {
+  color: #D4448B;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+}
+
+.woocommerce-product-gallery {
+  opacity: 1 !important;
+}
+
+.produto-unico {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
