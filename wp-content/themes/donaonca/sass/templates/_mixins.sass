@@ -13,3 +13,8 @@ $roboto:  'Roboto', sans-serif
   -webkit-box-shadow: $x-axis $y-axis $blur $color
   -moz-box-shadow: $x-axis $y-axis $blur $color
   box-shadow: $x-axis $y-axis $blur $color
+
+@mixin border-radius($radius) 
+  -webkit-border-radius: $radius
+  border-radius: $radius
+  background-clip: padding-box  // stops bg color from leaking outside the border: */

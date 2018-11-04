@@ -4,8 +4,11 @@
 	function donaonca_scripts() {
 		wp_enqueue_style('icones', get_template_directory_uri() . '/inc/css/flaticon.css', array(), '1.0.0', 'all');
 		wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
-		wp_enqueue_script('script', get_template_directory_uri() . '/js/app.js', array(), '1.0.0', true);
-	}
+		wp_enqueue_script(
+			'custom-script',
+			get_stylesheet_directory_uri() . '/js/app.js',
+			array( 'jquery' )
+		);	}
 	add_action('wp_enqueue_scripts', 'donaonca_scripts');
 
 	// Suporte woocommerce

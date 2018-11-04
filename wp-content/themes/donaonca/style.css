@@ -239,5 +239,97 @@ h1, h2, h3, h4, h5, h6 {
 .produto-unico {
   display: flex;
 }
+.produto-unico .summary.entry-summary {
+  width: 100%;
+  padding: 20px;
+  margin-left: 40px;
+}
+.produto-unico .summary.entry-summary .woocommerce-product-details__short-description {
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.botao-single-product {
+  display: grid;
+  grid-template-columns: 40px 150px;
+  grid-gap: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #6E6E6E;
+}
+.botao-single-product button {
+  background: #D4448B;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid #D4448B;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.botao-single-product button:hover {
+  background: #a52665;
+  border-color: #a52665;
+  cursor: pointer;
+}
+.botao-single-product .quantity {
+  width: 100%;
+}
+.botao-single-product .quantity input {
+  width: 100%;
+  border: 3px solid #D4448B;
+  padding: 10px 5px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.botao-single-product .quantity input:focus {
+  border: 3px solid #D4448B;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+  border: 1px solid #4A4A4A;
+}
+
+.tabs.wc-tabs {
+  display: flex;
+  list-style: none;
+  background: #ccc;
+}
+.tabs.wc-tabs li {
+  border: 1px solid #4A4A4A;
+  border-bottom: none;
+  border-top: none;
+  height: 100%;
+  padding: 15px 10px;
+  background: #fff;
+}
+.tabs.wc-tabs li a {
+  text-decoration: none;
+  color: #4A4A4A;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+#tab-description, #tab-reviews {
+  padding: 10px 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.product_meta {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #a1a1a1;
+}
+.product_meta span a {
+  font-weight: bold;
+  color: #6E6E6E;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */

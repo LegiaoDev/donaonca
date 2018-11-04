@@ -8,3 +8,85 @@
 
 .produto-unico
 	display: flex
+	.summary.entry-summary
+		width: 100%
+		padding: 20px
+		margin-left: 40px
+
+		.woocommerce-product-details__short-description
+			padding: 10px 0
+			font-family: $roboto
+			font-size: 18px
+.botao-single-product
+	display: grid
+	grid-template-columns: 40px 150px
+	grid-gap: 30px
+	padding-bottom: 20px
+	border-bottom: 1px solid $cinza-claro
+
+	button
+		background: $rosaescuro
+		color: white
+		font-family: $roboto
+		font-weight: bold
+		font-size: 18px
+		text-transform: uppercase
+		border: 1px solid $rosaescuro
+		@include border-radius(4px)
+		&:hover
+			background: darken($rosaescuro, 15%)
+			border-color: darken($rosaescuro, 15%)
+			cursor: pointer
+
+	.quantity
+		width: 100%
+
+		input
+			width: 100%
+			border: 3px solid $rosaescuro
+			padding: 10px 5px
+			@include border-radius(4px)
+			font-size: 20px
+			font-weight: bold
+			text-align: center
+
+			&:focus
+				border: 3px solid $rosaescuro
+
+.woocommerce-tabs.wc-tabs-wrapper
+	border: 1px solid $cinza
+
+.tabs.wc-tabs
+	display: flex
+	list-style: none
+	background: #ccc
+
+	li
+		border:	1px solid $cinza
+		border-bottom: none
+		border-top: none
+		height: 100%
+		padding: 15px 10px
+		background: #fff
+
+		a
+			text-decoration: none
+			color: $cinza
+			font-weight: bold
+			font-family: $roboto
+	
+#tab-description, #tab-reviews
+	padding: 10px 30px
+	font-family: $roboto
+			
+.product_meta
+	padding: 10px
+	font-family: $roboto
+	color: lighten($cinza-claro, 20%)
+
+	span
+
+		a
+			font-weight: bold
+			color: $cinza-claro
+			text-decoration: none
