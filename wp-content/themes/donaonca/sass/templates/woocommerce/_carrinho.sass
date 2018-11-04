@@ -1,0 +1,86 @@
+.cart_totals 
+	h2
+		margin-bottom: 10px
+
+	.wc-proceed-to-checkout
+		a 
+			width: 100%
+			font-family: $roboto
+			font-weight: bold
+			color: white
+			background: $rosa-escuro
+			text-align: center
+			padding: 10px 0
+.woocommerce table.shop_table 
+	th
+		font-weight: bold
+		color: $cinza-claro
+		font-family: $roboto
+	
+	td 
+		font-family: $roboto
+		
+.woocommerce-cart-form
+	text-align: center
+
+	.shop_table
+		th 
+			font-weight: bold
+			font-size: 18px
+			color: $cinza-claro
+			font-family: $roboto
+
+	.product-thumbnail
+		width: 10vw
+		min-width: 150px
+		height: auto
+
+	.product-name
+		font-family: $roboto
+		font-weight: bold
+		
+		a 
+			color: $cinza
+			text-decoration: none
+			font-size: 20px
+
+	.product-price
+		color: $cinza
+		font-size: 20px
+		font-family: $roboto
+
+	.product-subtotal
+		font-family: $roboto
+		font-weight: bold
+		color: $rosa-escuro
+		font-size: 26px
+
+	.product-quantity
+
+		.quantity
+
+			input
+				border: 1px solid $cinza-claro
+				@include border-radius(4px)
+				padding: 5px
+				font-size: 18px
+
+	.coupon
+		display: grid
+		grid-template-columns: 60% 40%
+		grid-gap: 20px
+
+		.button
+			width: 100%
+			background: $cinza-claro
+			color: white
+
+			&:hover
+				background: darken($cinza-claro, 30%)
+				color: white
+
+.woocommerce table.cart td.actions .input-text
+	width: 100%
+	text-indent: 10px
+
+		
