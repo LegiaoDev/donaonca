@@ -447,8 +447,8 @@ h1, h2, h3, h4, h5, h6 {
 .woocommerce .col2-set .col-2 select {
   font-family: "Roboto", sans-serif;
 }
-.woocommerce .col2-set .col-1 .shipping_address,
-.woocommerce .col2-set .col-2 .shipping_address {
+.woocommerce .col2-set .col-1 .woocommerce-shipping-fields,
+.woocommerce .col2-set .col-2 .woocommerce-shipping-fields {
   display: none;
 }
 
