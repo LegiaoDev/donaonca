@@ -20,22 +20,32 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'donaonca');
+if($_SERVER['HTTP_HOST'] === 'live.domain.url') {
+	define('DB_NAME', 'donaonca');
+	/** MySQL database username */
+	define('DB_USER', 'root');
+	/** MySQL database password */
+	define('DB_PASSWORD', '');
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+	/** Database Charset to use in creating database tables. */
+	define('DB_CHARSET', 'utf8');
+	/** The Database Collate type. Don't change this if in doubt. */
+	define('DB_COLLATE', '');
+}else{
+	define('DB_NAME', 'dona-onca');
+	/** MySQL database username */
+	define('DB_USER', 'gadev-admin');
+	/** MySQL database password */
+	define('DB_PASSWORD', 'gadevdonaonca.');
+	/** MySQL hostname */
+	define('DB_HOST', 'mysql995.umbler.com');
+	/** Database Charset to use in creating database tables. */
+	define('DB_CHARSET', 'utf8');
+	/** The Database Collate type. Don't change this if in doubt. */
+	define('DB_COLLATE', '');
+}
 
-/** MySQL database username */
-define('DB_USER', 'root');
-
-/** MySQL database password */
-define('DB_PASSWORD', '');
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
