@@ -452,4 +452,37 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.woocommerce-order {
+  font-family: "Roboto", sans-serif;
+  margin: 50px 0;
+}
+.woocommerce-order .woocommerce-thankyou-order-received,
+.woocommerce-order .woocommerce-notice--success {
+  background: #eeeeee;
+  color: #6E6E6E;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #eeeeee;
+  border-left: 45px solid #23d160;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  margin-bottom: 15px;
+}
+.woocommerce-order ul.order_details li {
+  font-size: 0.9em;
+}
+.woocommerce-order ul.order_details li strong {
+  font-size: 1.7em;
+}
+.woocommerce-order p {
+  margin-bottom: 10px;
+}
+
+.woocommerce-order-details__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
