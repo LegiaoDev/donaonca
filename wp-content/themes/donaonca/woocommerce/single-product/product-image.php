@@ -39,13 +39,18 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
 		<?php
 		if ( has_post_thumbnail() ) {
 			$html  = wc_get_gallery_image_html( $post_thumbnail_id, true );
+			$html .= '<div class="flex-produto">';
+
+
 		} else {
-			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+			$html  .= '<div class="woocommerce-product-gallery__image--placeholder flex">';
 			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
 			$html .= '</div>';
+			
 		}
 
 		echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id );
+		$html .= '</div>';
 
 		do_action( 'woocommerce_product_thumbnails' );
 		?>
