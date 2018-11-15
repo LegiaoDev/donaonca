@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 1240px;
   max-width: 80vw;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 .container .titulo-secao {
   width: 100%;
@@ -563,6 +563,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 .woocommerce-Addresses .woocommerce-Address-title a:hover {
   background: #ba2b72;
+}
+
+#pagina-login h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.woocommerce form.login {
+  font-family: "Raleway", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+}
+.woocommerce form.login input {
+  padding: 10px 0;
+  text-indent: 10px;
+  border: 1px solid #aaaaaa;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.woocommerce form.login .rodape-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.woocommerce form.login .rodape-form .woocommerce-Button {
+  background: #D4448B;
+  color: white;
+  border: 1px solid #D4448B;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.woocommerce form.login .rodape-form .woocommerce-Button:hover {
+  background: #a52665;
+}
+.woocommerce form.login .woocommerce-LostPassword.lost_password a {
+  color: #D4448B;
 }
 
 /*# sourceMappingURL=style.css.map */

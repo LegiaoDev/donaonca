@@ -1,0 +1,36 @@
+#pagina-login
+	h2
+		text-align: center
+		margin-bottom: 10px
+		font-weight: bold
+	
+.woocommerce form.login
+	font-family: $raleway
+	width: 50%
+	margin: 0 auto
+
+	input	
+		padding: 10px 0
+		text-indent: 10px
+		border: 1px solid $cinza-claro
+		+border-radius(4px)
+
+
+	.rodape-form
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		.woocommerce-Button
+			background: $rosa-escuro
+			color: white
+			border: 1px solid $rosa-escuro
+			+border-radius(4px)
+
+			&:hover
+				background: darken($rosa-escuro, 15%)
+
+	.woocommerce-LostPassword.lost_password
+		a 
+			color: $rosa-escuro
+

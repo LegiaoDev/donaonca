@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-if($_SERVER['HTTP_HOST'] === 'live.domain.url') {
+if($_SERVER['HTTP_HOST'] === 'local.donaonca.com') {
 	define('DB_NAME', 'donaonca');
 	/** MySQL database username */
 	define('DB_USER', 'root');
