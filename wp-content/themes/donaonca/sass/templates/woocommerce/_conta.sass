@@ -1,0 +1,72 @@
+.woocommerce-MyAccount-navigation
+	margin: 50px 0
+
+	ul
+		display: flex
+		justify-content: space-between
+		list-style: none
+
+	&-link
+		font-weight: bold
+		font-family: $roboto
+		font-size: 18px
+
+		a
+			text-decoration: none
+			color: $cinza
+			border-bottom: 1px solid white
+			padding: 5px
+
+	.is-active
+		a
+			color: $rosa-escuro
+			border-bottom: 1px solid $rosa-escuro
+
+// Dashboard
+
+.dashboard-conta-conteudo
+	font-family: $roboto
+
+	.titulo-dashboard
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+
+		h2
+			font-size: 2em
+
+// Endereço
+.woocommerce-MyAccount-content
+
+	#endereco-conta
+		p
+			font-family: $roboto
+.woocommerce-Addresses
+	display: flex
+	justify-content: space-between
+
+	.woocommerce-Address
+		width: 50%
+		border: 1px solid $cinza
+		margin: 10px 20px
+		padding: 15px
+
+		&-title
+			display: flex
+			justify-content: space-between
+			align-items: center
+			
+			h3
+				font-weight: bold
+				font-size: 1.4em
+
+			a
+				color: white
+				background: $rosa-escuro
+				border: 1px solid $rosa-escuro
+				@include border-radius(4px)
+				text-decoration: none
+				padding: 5px 10px
+
+				&:hover
+					background: darken($rosa-escuro, 10%)
