@@ -1,8 +1,13 @@
 @import '_mixins'
 
 h1,h2,h3,h4,h5,h6 
-	font-family: 'Raleway', sans-serif
+	font-family: $raleway
 	font-weight: lighter
+
+p,span,em
+	font-family: $roboto 
+	color: $cinza-escuro
+
 .container
 	width: 1240px
 	max-width: 80vw
@@ -21,3 +26,42 @@ h1,h2,h3,h4,h5,h6
 			width: 20%
 			height: 1px
 			border-bottom: 1px dashed $cinza
+mark 
+	background: $rosa
+	color: $cinza
+	border: 1px solid $rosa
+	+border-radius(4px)
+	padding: 5px
+	font-weight: bold
+
+input, select, textarea	
+	padding: 10px 0
+	text-indent: 10px
+	border: 1px solid $cinza-claro
+	+border-radius(4px)
+	font-family: $roboto
+	
+label
+	font-family: $raleway
+
+fieldset
+	padding: 10px
+	border: 1px solid $cinza-claro
+	+border-radius(4px)
+
+	legend	
+		font-family: $raleway
+		font-weight: bold
+		padding: 0 10px
+		color: $cinza-escuro
+
+.woocommerce button.button
+	background: $rosa-escuro
+	color: white
+	border: 1px solid $rosa-escuro
+	+border-radius(4px)
+	margin-top: 10px
+
+	&:hover
+		background: darken($rosa-escuro, 15%)
+		color: white

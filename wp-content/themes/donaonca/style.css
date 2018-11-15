@@ -135,6 +135,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: lighter;
 }
 
+p, span, em {
+  font-family: "Roboto", sans-serif;
+  color: #4A4A4A;
+}
+
 .container {
   width: 1240px;
   max-width: 80vw;
@@ -153,6 +158,59 @@ h1, h2, h3, h4, h5, h6 {
   width: 20%;
   height: 1px;
   border-bottom: 1px dashed #6E6E6E;
+}
+
+mark {
+  background: #FFDEE1;
+  color: #6E6E6E;
+  border: 1px solid #FFDEE1;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 10px 0;
+  text-indent: 10px;
+  border: 1px solid #aaaaaa;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  font-family: "Roboto", sans-serif;
+}
+
+label {
+  font-family: "Raleway", sans-serif;
+}
+
+fieldset {
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+fieldset legend {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #4A4A4A;
+}
+
+.woocommerce button.button {
+  background: #D4448B;
+  color: white;
+  border: 1px solid #D4448B;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  margin-top: 10px;
+}
+.woocommerce button.button:hover {
+  background: #a52665;
+  color: white;
 }
 
 .banners-fixos {
@@ -563,6 +621,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .woocommerce-Addresses .woocommerce-Address-title a:hover {
   background: #ba2b72;
+}
+
+.woocommerce a.button {
+  background: #D4448B;
+  color: white;
+  border: 1px solid #D4448B;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.woocommerce a.button:hover {
+  background: #ba2b72 !important;
+  color: white !important;
 }
 
 #pagina-login h2 {
