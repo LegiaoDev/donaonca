@@ -18,7 +18,7 @@
 
 			<!-- Icones -->
 			<div class="icones-top-menu">
-				<a href="#"><div class="flaticon-whatsapp-logo"></div></a>
+				<a href="https://api.whatsapp.com/send?phone=5547988421537"><div class="flaticon-whatsapp-logo"></div></a>
 				<a href="/minha-conta/"><div class="flaticon-user"></div></a>
 				<a href="/carrinho/"><div class="flaticon-shopping-cart"></div></a>
 			</div> <!-- Fim icones -->
