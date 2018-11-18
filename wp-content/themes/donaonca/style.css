@@ -12,9 +12,9 @@
  * */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,900");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
 .top-nav-menu {
   display: flex;
   width: 97vw;
@@ -22,6 +22,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+  margin: 0;
 }
 .top-nav-menu .logo-top-nav-menu {
   width: 140px;
@@ -72,6 +73,7 @@
   padding: 25px 0;
   justify-content: center;
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 .dona-onca-menu li {
   margin: 0 15px;
@@ -80,11 +82,6 @@
   text-transform: uppercase;
   color: #6E6E6E;
   text-decoration: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .banners {
@@ -130,6 +127,29 @@
   color: #D4448B;
 }
 
+.select-categoria {
+  display: grid;
+  grid-template-columns: 60% 20%;
+  justify-content: space-between;
+  grid-gap: 20%;
+  margin: 30px 0;
+}
+.select-categoria.mobile {
+  display: none;
+}
+.select-categoria .botao-categoria {
+  margin-top: 0;
+}
+
+@media (max-width: 1050px) {
+  .select-categoria.mobile {
+    display: grid;
+  }
+
+  .categoria-home {
+    display: none;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: lighter;
@@ -199,7 +219,8 @@ fieldset legend {
   color: #4A4A4A;
 }
 
-.woocommerce button.button {
+.woocommerce button.button,
+.botao {
   background: #D4448B;
   color: white;
   border: 1px solid #D4448B;
@@ -207,15 +228,29 @@ fieldset legend {
   border-radius: 4px;
   background-clip: padding-box;
   margin-top: 10px;
+  height: 100%;
 }
-.woocommerce button.button:hover {
+.woocommerce button.button:hover,
+.botao:hover {
   background: #a52665;
   color: white;
+  cursor: pointer;
 }
 
+.columns {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+  }
+}
 .banners-fixos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1%;
 }
 .banners-fixos .banner-fixo {
@@ -223,12 +258,25 @@ fieldset legend {
 }
 .banners-fixos .banner-fixo a img {
   width: 100%;
+  height: auto;
 }
 
+@media screen and (max-width: 900px) {
+  .banners-fixos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .banners-fixos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .produtos-home-array {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
+  grid-gap: 20px;
   padding: 50px 0;
 }
 .produtos-home-array .produto {
@@ -251,6 +299,8 @@ fieldset legend {
 }
 .produtos-home-array .produto a img {
   width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 .produtos-home-array .produto h3 {
   color: #aaaaaa;
@@ -280,6 +330,83 @@ fieldset legend {
   text-decoration: none;
   margin-left: 10px;
   align-self: flex-end;
+}
+
+@media screen and (max-width: 1050px) {
+  .produtos-home-array {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
 }
 
 .preco-produto {

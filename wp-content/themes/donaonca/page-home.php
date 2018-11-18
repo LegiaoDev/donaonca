@@ -4,7 +4,7 @@
     ****** Banner rotativo ******
     *************************
     -->
-    <div class="banners"><!-- Abre banners -->
+    <div class="banners hero is-medium"><!-- Abre banners -->
         <a href="#">
             <div class="banner" id="banner1"></div>
         </a>
@@ -37,7 +37,19 @@
                 }
                 echo '</ul>'; // Fecha a lista <ul>
             }
-        ?>
+            if( !empty($categoria_produtos) ):   ?>
+             <div class="select-categoria mobile">
+                    <select name="categorias" id="categorias">
+                        <?php foreach ($categoria_produtos as $key => $categoria): ?>
+                            <option value="<?php echo get_term_link($categoria); ?>">
+                                <?php echo $categoria->name; ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                    <button class="botao botao-categoria">Buscar</button>
+                </div>
+           
+            <?php endif; ?>
         <!-- 
         *************************
         *******Banners fixos*******
@@ -50,11 +62,6 @@
                 </a>
             </div>
             <div class="banner-fixo" id="banner-fixo2">
-                <a href="#">
-                    <img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner-fixo.png" alt="">
-                </a>
-            </div>
-            <div class="banner-fixo" id="banner-fixo3">
                 <a href="#">
                     <img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner-fixo.png" alt="">
                 </a>
@@ -122,7 +129,7 @@
                 );
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-                    <div class="produto">
+                    <div class="produto is-one-quarter">
                         <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                             <?php
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 

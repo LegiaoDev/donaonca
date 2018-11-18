@@ -22,3 +22,23 @@
 		a
 			text-decoration: none
 			color: $rosa-escuro
+
+.select-categoria
+	display: grid
+	grid-template-columns: 60% 20%
+	justify-content: space-between
+	grid-gap: 20%
+	margin: 30px 0
+
+	&.mobile
+		display: none
+
+	.botao-categoria
+		margin-top: 0
+
+@media (max-width: 1050px)
+	.select-categoria.mobile
+		display: grid
+
+	.categoria-home
+		display: none

@@ -55,13 +55,27 @@ fieldset
 		padding: 0 10px
 		color: $cinza-escuro
 
-.woocommerce button.button
+.woocommerce button.button,
+.botao
 	background: $rosa-escuro
 	color: white
 	border: 1px solid $rosa-escuro
 	+border-radius(4px)
 	margin-top: 10px
+	height: 100%
 
 	&:hover
 		background: darken($rosa-escuro, 15%)
 		color: white
+		cursor: pointer
+
+.columns 
+	margin: 0
+
+@media screen and (min-width: 768px) 
+	.columns 
+		margin-left: -0.75rem
+		margin-right: -0.75rem
+		margin-top: -0.75rem
+	
+
