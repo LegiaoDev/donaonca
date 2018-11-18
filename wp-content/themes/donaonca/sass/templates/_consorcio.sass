@@ -1,0 +1,39 @@
+.consorcio
+	display: grid
+	grid-template-columns: 60% 40%
+
+	&__imagem
+		background: black
+		position: relative
+		&__texto
+			position: absolute
+			top: 30px
+			left: 30px
+			color: white
+			font-size: 40px
+			font-family: $raleway
+
+	&__area-form
+		background: $rosa
+		padding: 100px 50px
+
+		&__titulo
+			font-weight: bold
+			color: $cinza-escuro
+			text-align: center
+			font-size: 35px
+			margin: 20px 0
+
+	&__form
+		display: grid
+		grid-template-rows: repeat(3,1fr)
+		grid-gap: 15px
+
+		input	
+			border: none
+			+box-shadow(2px, 3px, 5px, rgba(0,0,0,0.2))
+
+		&__botao
+			margin-top: 0
+			font-size: 18px
+			+box-shadow(2px, 3px, 5px, rgba(0,0,0,0.2))

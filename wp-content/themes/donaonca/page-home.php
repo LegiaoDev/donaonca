@@ -93,7 +93,7 @@
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
-                            <h3><?php the_title(); ?></h3>
+                            <h2><?php the_title(); ?></h2>
                             <div class="valor">
                                 <?php 
                                     $preco =  $product->get_price();
@@ -135,7 +135,7 @@
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
-                            <h3><?php the_title(); ?></h3>
+                            <h2><?php the_title(); ?></h2>
                             <div class="valor">
                                 <?php 
                                     $preco =  $product->get_price();
@@ -150,7 +150,39 @@
                 <?php wp_reset_query(); 
             ?>
         </div>
-
-
+        
+          <!-- 
+        *************************
+        ******* Numero whatsapp cadastro *******
+        *************************
+        -->
     </div> <!-- Fecha container -->
+    <div class="newsletter">
+        <div class="container" id="news">
+            <h3 class="news__texto">Receba novidades direto no seu Whatsapp!</h3>
+            <form action="" method="post" class="news__form">
+                <input type="text" placeholder="Digite seu número">
+                <button class="botao" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 
+        *************************
+        ******* consórcio *******
+        *************************
+        -->
+    <div class="container consorcio">
+        <div class="consorcio__imagem">
+            <p class="consorcio__imagem__texto">Participe do Consórcio</p>
+        </div>
+        <div class="consorcio__area-form">
+            <h3 class="consorcio__area-form__titulo">Faça parte!</h3>
+            <form action="" method="post" class="consorcio__form">
+                <input type="text" placeholder="Digite seu nome">
+                <input type="tel" placeholder="Digite seu numero">
+                <button type="submit" class="botao consorcio__form__botao">Enviar</button>
+            </form>
+        </div>
+    </div>
 <?php get_footer(); ?>

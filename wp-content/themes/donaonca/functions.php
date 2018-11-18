@@ -36,4 +36,12 @@
 	}
 	add_action( 'after_setup_theme', 'donaonca_logo' );
 
+	function meusWidgets() {
+		register_sidebar(array(
+			'name' => 'Sidebar',
+			'id' => 'sidebar1'
+		));
+	}
+	add_action( 'widgets_init', 'meusWidgets');
+
 ?>

@@ -1,0 +1,8 @@
+2018-11-18T00:57:04+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW) in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\functions.php on line 41
+
+2018-11-18T00:57:05+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW) in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\functions.php on line 41
+
+2018-11-18T00:57:34+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')' in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\functions.php on line 43
+
+2018-11-18T00:57:38+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ')' in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\functions.php on line 44
+

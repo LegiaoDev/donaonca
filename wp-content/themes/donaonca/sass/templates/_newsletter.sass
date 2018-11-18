@@ -1,0 +1,29 @@
+.newsletter
+	background: $rosa
+	padding: 20px 0
+	#news
+		display: grid
+		grid-template-columns: repeat(2,1fr)
+		grid-gap: 15%
+		justify-content: space-between
+		align-items: center
+		margin: 0 auto
+
+		.news__texto
+			font-size: 25px
+			color: $cinza
+
+		.news__form
+			display: grid
+			grid-template-columns: 70% 30%
+			grid-gap: 10px
+
+			input
+				border: none
+				+box-shadow(2px, 3px, 5px, rgba(0,0,0,0.2))
+
+			.botao
+				margin-top: 0
+				font-size: 18px
+				font-weight: bold
+				+box-shadow(2px, 3px, 5px, rgba(0,0,0,0.2))
