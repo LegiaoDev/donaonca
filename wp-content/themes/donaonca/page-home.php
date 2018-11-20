@@ -93,7 +93,7 @@
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
-                            <h2><?php the_title(); ?></h2>
+                            <p class="titulo-produto"><?php the_title(); ?></p>
                             <div class="valor">
                                 <?php 
                                     $preco =  $product->get_price();
@@ -135,7 +135,7 @@
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
-                            <h2><?php the_title(); ?></h2>
+                            <p class="titulo-produto"><?php the_title(); ?></p>
                             <div class="valor">
                                 <?php 
                                     $preco =  $product->get_price();
