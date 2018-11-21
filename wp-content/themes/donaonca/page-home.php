@@ -64,8 +64,8 @@
                                 <div class="valor">
                                     <?php 
                                         $preco =  $product->get_price();
-                                        $parcela = floatval( $preco)/12;
-                                        echo "<p>12x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                        $parcela = floatval( $preco)/4;
+                                        echo "<p>4x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
                                         // echo gettype($parcela);
                                     ?>
                                 </div>
