@@ -250,15 +250,22 @@ fieldset legend {
 }
 .banners-fixos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 .banners-fixos .banner-fixo {
   max-width: 100%;
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
 }
 .banners-fixos .banner-fixo a img {
   width: 100%;
   height: auto;
+}
+.banners-fixos .banner-fixo:hover {
+  outline: 2px solid #6E6E6E;
+  outline-offset: -15px;
 }
 
 @media screen and (max-width: 900px) {
@@ -281,7 +288,6 @@ fieldset legend {
 }
 .produtos-home-array .produto {
   display: inline-block;
-  padding: 10px;
   position: relative;
   transition: all 200ms ease-in;
   transform: scale(1);
@@ -291,6 +297,7 @@ fieldset legend {
   -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
+  padding: 5px;
   transition: all 200ms ease-in;
   transform: scale(1.05);
 }
@@ -305,7 +312,7 @@ fieldset legend {
 .produtos-home-array .produto .titulo-produto {
   color: #6E6E6E;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .produtos-home-array .produto .add_to_cart_button {
   display: none;

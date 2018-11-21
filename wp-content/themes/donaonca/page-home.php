@@ -12,45 +12,6 @@
 
     <div class="container"> <!-- Abre container -->
         <!-- 
-        **************************
-        ******** Categorias ********
-        *************************
-        -->
-        <?php
-            $ordenar_por = 'name'; // Ordenar lista por nome
-            $ordem = 'asc';  // Ordenar a lista de A-Z
-            $esconde_vazio = false ;  // Prevenir de mostrar categorias sem produto
-            $args_categoria = array( 
-                'orderby'    => $ordenar_por,
-                'order'      => $ordem,
-                'hide_empty' => $esconde_vazio,
-            );   // Argumentos das categorias
-            $categoria_produtos = get_terms( 'product_cat', $args_categoria );  // Pega a categoria
-            if( !empty($categoria_produtos) ){
-                echo ' <ul class="categoria-home">'; // Se $categoria_produtos não estiver vazia (se existem categorias) abrir tag <ul>
-                foreach ($categoria_produtos as $key => $categoria) { // Monta foreach para categorias
-                    echo ' <li class="categoria-item-home">'; // Cria a tag <li>
-                    echo '<a href="'.get_term_link($categoria).'" >'; // Inseri o link para a categoria
-                    echo $categoria->name; // Inseri o nome da categoria
-                    echo '</a>'; // Fecha a tag <a>
-                    echo '</li>'; // Fecha a tag <li>
-                }
-                echo '</ul>'; // Fecha a lista <ul>
-            }
-            if( !empty($categoria_produtos) ):   ?>
-             <div class="select-categoria mobile">
-                    <select name="categorias" id="categorias">
-                        <?php foreach ($categoria_produtos as $key => $categoria): ?>
-                            <option value="<?php echo get_term_link($categoria); ?>">
-                                <?php echo $categoria->name; ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
-                    <button class="botao botao-categoria">Buscar</button>
-                </div>
-           
-            <?php endif; ?>
-        <!-- 
         *************************
         *******Banners fixos*******
         *************************
@@ -58,12 +19,17 @@
         <div class="banners-fixos">
             <div class="banner-fixo" id="banner-fixo1">
                 <a href="#">
-                    <img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner-fixo.png" alt="">
+                    <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
                 </a>
             </div>
             <div class="banner-fixo" id="banner-fixo2">
                 <a href="#">
-                    <img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner-fixo.png" alt="">
+                    <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
+                </a>
+            </div>
+            <div class="banner-fixo" id="banner-fixo2">
+                <a href="#">
+                    <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
                 </a>
             </div>
         </div>
