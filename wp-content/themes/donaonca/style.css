@@ -304,8 +304,8 @@ fieldset legend {
 }
 .produtos-home-array .produto .titulo-produto {
   color: #6E6E6E;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
 }
 .produtos-home-array .produto .add_to_cart_button {
   display: none;
