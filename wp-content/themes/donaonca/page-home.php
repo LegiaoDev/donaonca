@@ -59,14 +59,16 @@
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
-                            <p class="titulo-produto"><?php the_title(); ?></p>
-                            <div class="valor">
-                                <?php 
-                                    $preco =  $product->get_price();
-                                    $parcela = floatval( $preco)/12;
-                                    echo "<p>12x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
-                                    // echo gettype($parcela);
-                                ?>
+                            <div class="texto-produto">
+                                <p class="titulo-produto"><?php the_title(); ?></p>
+                                <div class="valor">
+                                    <?php 
+                                        $preco =  $product->get_price();
+                                        $parcela = floatval( $preco)/12;
+                                        echo "<p>12x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                        // echo gettype($parcela);
+                                    ?>
+                                </div>
                             </div>
                             <?php 
                             global $product;
@@ -115,14 +117,16 @@
                                 if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
-                            <p class="titulo-produto"><?php the_title(); ?></p>
-                            <div class="valor">
-                                <?php 
-                                    $preco =  $product->get_price();
-                                    $parcela = floatval( $preco)/12;
-                                    echo "<p>12x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
-                                    // echo gettype($parcela);
-                                ?>
+                            <div class="texto-produto">
+                                <p class="titulo-produto"><?php the_title(); ?></p>
+                                <div class="valor">
+                                    <?php 
+                                        $preco =  $product->get_price();
+                                        $parcela = floatval( $preco)/4;
+                                        echo "<p>4x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                        // echo gettype($parcela);
+                                    ?>
+                                </div>
                             </div>
                         </a>
                     </div><!-- /span3 -->
