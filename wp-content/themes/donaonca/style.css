@@ -172,12 +172,25 @@ p, span, em {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin: 50px 0;
+  margin-bottom: 25px;
+}
+.container .titulo-secao .titulo-lista-produto {
+  font-weight: bold;
+  font-size: 30px;
+  color: #D4448B;
+  background: white;
+  z-index: 9;
+  padding: 5px 10px;
+  position: relative;
 }
 .container .titulo-secao .barra-titulo {
   display: block;
-  width: 20%;
+  width: 100%;
   height: 1px;
-  border-bottom: 1px dashed #6E6E6E;
+  border-bottom: 2px solid #6E6E6E;
+  position: absolute;
 }
 
 mark {
@@ -284,7 +297,6 @@ fieldset legend {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  padding: 50px 0;
 }
 .produtos-home-array .produto {
   display: inline-block;
@@ -897,6 +909,63 @@ th {
 }
 .woocommerce form.login .woocommerce-LostPassword.lost_password a {
   color: #D4448B;
+}
+
+/*star rating for products*/
+@font-face {
+  font-family: "star";
+  src: url("../../plugins/woocommerce/assets/fonts/star.eot");
+  src: url("../../plugins/woocommerce/assets/fonts/star.eot?#iefix") format("embedded-opentype"), url("../../plugins/woocommerce/assets/fonts/star.woff") format("woff"), url("../../plugins/woocommerce/assets/fonts/star.ttf") format("truetype"), url("../../plugins/woocommerce/assets/fonts/star.svg#star") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.woocommerce-product-rating {
+  margin-bottom: 1.618em;
+  line-height: 2;
+}
+.woocommerce-product-rating .star-rating {
+  margin: 0.5em 4px 0 0;
+  float: left;
+  font-family: star;
+}
+.woocommerce-product-rating::after, .woocommerce-product-rating .rating-custom, .woocommerce-product-rating::before {
+  content: " ";
+  display: table;
+}
+
+.star-rating {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1;
+  font-size: 1em;
+  width: 5.4em;
+  font-family: star;
+}
+.star-rating::before {
+  content: "SSSSS";
+  color: #d3ced2;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+  font-family: "star";
+}
+.star-rating span::before {
+  content: "SSSSS";
+  top: 0;
+  color: #D4448B;
+  position: absolute;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

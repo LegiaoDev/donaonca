@@ -60,6 +60,9 @@
                                 else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="My Image Placeholder" width="65px" height="115px" />'; 
                             ?>
                             <div class="texto-produto">
+                                <div class="rating-custom">
+                                    <?php wc_get_template( 'single-product/rating.php' ); ?>
+                                </div>
                                 <p class="titulo-produto"><?php the_title(); ?></p>
                                 <div class="valor">
                                     <?php 
@@ -97,7 +100,7 @@
         *************************
         -->
         <div class="titulo-secao">
-            <h2 class="titulo-lista-produto">Lançamentos</h2>
+            <h2 class="titulo-lista-produto">Mais vendidos</h2>
             <span class="barra-titulo"></span>
         </div>
         <div class="produtos-home-array" id="lancamentos">

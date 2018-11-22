@@ -1,0 +1,8 @@
+2018-11-20T23:03:02+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_rating() in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\page-home.php:66
+Stack trace:
+#0 D:\Programas\laragon\www\donaonca\wp-includes\template-loader.php(74): include()
+#1 D:\Programas\laragon\www\donaonca\wp-blog-header.php(19): require_once('D:\\Programas\\la...')
+#2 D:\Programas\laragon\www\donaonca\index.php(17): require('D:\\Programas\\la...')
+#3 {main}
+  thrown in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\page-home.php on line 66
+

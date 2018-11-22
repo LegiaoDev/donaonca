@@ -1,0 +1,56 @@
+/*star rating for products*/
+@font-face
+	font-family: 'star'
+	src: url("../../plugins/woocommerce/assets/fonts/star.eot")
+	src: url("../../plugins/woocommerce/assets/fonts/star.eot?#iefix") format("embedded-opentype"), url("../../plugins/woocommerce/assets/fonts/star.woff") format("woff"), url("../../plugins/woocommerce/assets/fonts/star.ttf") format("truetype"), url("../../plugins/woocommerce/assets/fonts/star.svg#star") format("svg")
+	font-weight: normal
+	font-style: normal
+
+.woocommerce-product-rating 
+	margin-bottom: 1.618em
+	line-height: 2
+	
+
+	.star-rating 
+		margin: .5em 4px 0 0
+		float: left
+		font-family: star
+
+	&::after, .rating-custom,
+	&::before 
+		content: ' '
+		display: table
+
+.star-rating 
+	float: right
+	overflow: hidden
+	position: relative
+	height: 1em
+	line-height: 1
+	font-size: 1em
+	width: 5.4em
+	font-family: star
+
+	&::before 
+		content: '\53\53\53\53\53'
+		color: #d3ced2
+		float: left
+		top: 0
+		left: 0
+		position: absolute
+
+	span 
+		overflow: hidden
+		float: left
+		top: 0
+		left: 0
+		position: absolute
+		padding-top: 1.5em
+		font-family: 'star'
+
+		&::before 
+			content: '\53\53\53\53\53'
+			top: 0
+			color: $rosa-escuro
+			position: absolute
+			left: 0
