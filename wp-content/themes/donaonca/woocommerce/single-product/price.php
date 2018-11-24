@@ -22,5 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
+
 ?>
-		<p class="preco-produto">R$ <?php echo $product->get_price(); ?></p>
+		<p class="preco-produto">R$ <?php echo number_format( $product->get_price(), 2, ',', ' ' ); ?></p>

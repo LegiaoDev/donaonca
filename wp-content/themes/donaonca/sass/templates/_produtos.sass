@@ -20,7 +20,9 @@
 				width: 100%
 				height: auto
 				max-width: 100%
-		.titulo-produto
+				margin-bottom: 15px
+		.titulo-produto,
+		h3
 			color: $cinza
 			font-size: 20px
 			font-weight: 500
@@ -67,4 +69,10 @@
 	.produtos-home-array
 		display: grid
 		grid-template-columns: repeat(2,1fr)
-		grid-gap: 0
+		grid-gap: 20px
+
+@media screen and (max-width: 750px)
+	.produtos-home-array
+		display: grid
+		grid-template-columns: repeat(2,1fr)
+		grid-gap: 5px

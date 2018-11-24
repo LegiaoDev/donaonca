@@ -325,8 +325,10 @@ input[type=submit]:hover {
   width: 100%;
   height: auto;
   max-width: 100%;
+  margin-bottom: 15px;
 }
-.produtos-home-array .produto .titulo-produto {
+.produtos-home-array .produto .titulo-produto,
+.produtos-home-array .produto h3 {
   color: #6E6E6E;
   font-size: 20px;
   font-weight: 500;
@@ -382,7 +384,14 @@ input[type=submit]:hover {
   .produtos-home-array {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0;
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .produtos-home-array {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
   }
 }
 * {
@@ -604,6 +613,10 @@ th {
   border: 3px solid #D4448B;
 }
 
+.woocommerce-tabs {
+  margin-top: 30px;
+}
+
 .woocommerce-tabs.wc-tabs-wrapper {
   border: 1px solid #6E6E6E;
 }
@@ -611,7 +624,7 @@ th {
 .tabs.wc-tabs {
   display: flex;
   list-style: none;
-  background: #ccc;
+  background: #eeeeee;
 }
 .tabs.wc-tabs li {
   border: 1px solid #6E6E6E;
@@ -631,6 +644,8 @@ th {
 #tab-description, #tab-reviews {
   padding: 10px 30px;
   font-family: "Roboto", sans-serif;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .product_meta {
@@ -651,6 +666,17 @@ th {
   margin-right: 5px;
 }
 
+@media screen and (max-width: 750px) {
+  .produto-unico {
+    display: flex;
+    flex-direction: column;
+  }
+  .produto-unico .summary.entry-summary {
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+  }
+}
 .cart_totals h2 {
   margin-bottom: 10px;
 }
@@ -1049,6 +1075,28 @@ th {
 }
 #reviews #review_form_wrapper #review_form .form-submit .submit {
   width: 100%;
+}
+
+.woocommerce-breadcrumb {
+  margin: 20px 0;
+  font-family: "Raleway", sans-serif;
+  color: #D4448B;
+  font-weight: bold;
+}
+.woocommerce-breadcrumb a {
+  color: #D4448B;
+  text-decoration: none;
+  font-weight: 500 !important;
+}
+.woocommerce-breadcrumb a:hover {
+  text-decoration: underline;
+}
+.woocommerce-breadcrumb .crumb:first-child a {
+  text-decoration: none;
+}
+.woocommerce-breadcrumb .crumb:first-child a::before {
+  font-family: FontAwesome;
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */
