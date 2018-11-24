@@ -1106,4 +1106,24 @@ th {
   content: "";
 }
 
+.woocommerce-message {
+  background: #23d160;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.woocommerce-message::before {
+  color: white;
+}
+.woocommerce-message .button {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.woocommerce-message .button::before {
+  content: "";
+  font-family: Flaticon;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
