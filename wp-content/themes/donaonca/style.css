@@ -364,6 +364,20 @@ input[type=submit]:hover {
   align-self: flex-end;
 }
 
+.woocommerce-loop-product__title {
+  color: #6E6E6E;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.woocommerce-loop-product__link {
+  display: flex;
+  flex-direction: column;
+}
+.woocommerce-loop-product__link .attachment-woocommerce_thumbnail {
+  margin-bottom: 15px;
+}
+
 @media screen and (max-width: 1050px) {
   .produtos-home-array {
     display: grid;
@@ -947,6 +961,7 @@ th {
   font-size: 1em;
   width: 5.4em;
   font-family: star;
+  margin-bottom: 15px;
 }
 .star-rating::before {
   content: "SSSSS";

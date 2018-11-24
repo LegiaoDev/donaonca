@@ -36,9 +36,9 @@ if ( $related_products)  { ?>
 
 	<section class="related products">
 	<div class="titulo-secao">
-            <h2 class="titulo-lista-produto">Produtos relacionados</h2>
-            <span class="barra-titulo"></span>
-        </div>
+        <h2 class="titulo-lista-produto">Produtos relacionados</h2>
+        <span class="barra-titulo"></span>
+    </div>
         <div class="produtos-home-array" id="lancamentos">
 		<?php
                 $args = array(
