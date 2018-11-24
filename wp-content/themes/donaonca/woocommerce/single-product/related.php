@@ -16,11 +16,23 @@
  * @version     3.0.0
  */
 
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( $related_products ) : ?>
+if ( $upsells ) { 
+    return;
+}
+
+global $product;
+
+	if ( isset( $product ) && is_product() ) {
+		$upsells = $product->get_upsells();
+    }
+
+    if ( sizeof( $upsells ) <= 0 ) {
+if ( $related_products)  { ?>
 
 	<section class="related products">
 	<div class="titulo-secao">
@@ -48,8 +60,8 @@ if ( $related_products ) : ?>
                             <div class="valor">
                                 <?php 
                                     $preco =  $product->get_price();
-                                    $parcela = floatval( $preco)/12;
-                                    echo "<p>12x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                    $parcela = floatval( $preco)/4;
+                                    echo "<p>4x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
                                     // echo gettype($parcela);
                                 ?>
                             </div>
@@ -61,6 +73,7 @@ if ( $related_products ) : ?>
 
 	</section>
 
-<?php endif;
+<?php }
+    }
 
 wp_reset_postdata();

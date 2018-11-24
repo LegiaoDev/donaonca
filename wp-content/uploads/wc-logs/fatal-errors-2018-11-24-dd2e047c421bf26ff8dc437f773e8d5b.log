@@ -1,0 +1,8 @@
+2018-11-24T00:11:34+00:00 CRITICAL syntax error, unexpected '?>' in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\related.php on line 25
+
+2018-11-24T00:14:25+00:00 CRITICAL Can't use function return value in write context in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\related.php on line 26
+
+2018-11-24T00:16:59+00:00 CRITICAL syntax error, unexpected '?>' in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\related.php on line 28
+
+2018-11-24T00:20:59+00:00 CRITICAL Can't use function return value in write context in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\related.php on line 34
+
