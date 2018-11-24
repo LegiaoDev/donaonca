@@ -51,9 +51,11 @@ input, select, textarea
 	border: 1px solid $cinza-claro
 	+border-radius(4px)
 	font-family: $roboto
+	resize: none
 	
 label
 	font-family: $raleway
+	margin: 10px 0
 
 fieldset
 	padding: 10px
@@ -67,9 +69,11 @@ fieldset
 		color: $cinza-escuro
 
 .woocommerce button.button,
-.botao
+.botao,
+input[type="submit"]
 	background: $rosa-escuro
 	color: white
+	font-size: 16px
 	border: 1px solid $rosa-escuro
 	+border-radius(4px)
 	margin-top: 10px

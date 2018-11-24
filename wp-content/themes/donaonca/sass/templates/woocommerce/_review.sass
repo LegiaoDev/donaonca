@@ -1,0 +1,61 @@
+#reviews
+
+	.commentlist
+
+		.review
+
+			.comment_container
+				display: flex
+				padding: 40px 0
+				border-bottom: 1px solid $cinza-claro
+
+				.texto-review
+					display: flex
+					justify-content: space-between
+					width: 100%
+					margin-left: 15px
+
+					.comment-text
+						width: 100%
+
+						.meta
+							display: flex
+							flex-direction: column
+							justify-content: flex-start
+
+							.woocommerce-review__author
+								font-size: 20px
+
+						.description
+							text-indent: 10px
+							padding: 15px
+							
+					.star-rating
+						width: 90px
+
+				.avatar
+					height: 100px
+					width: auto
+
+	#review_form_wrapper
+		padding: 30px 0
+
+		#review_form
+			width: 50%
+			margin: 0 auto
+
+			.comment-reply-title
+				font-size: 20px
+				font-weight: bold
+				color: $cinza
+				margin-bottom: 25px
+
+			.comment-form
+				margin: 20px 0
+				&-rating,
+				&-comment
+					display: flex
+					flex-direction: column
+			.form-submit
+				.submit
+					width: 100%

@@ -212,10 +212,12 @@ input, select, textarea {
   border-radius: 4px;
   background-clip: padding-box;
   font-family: "Roboto", sans-serif;
+  resize: none;
 }
 
 label {
   font-family: "Raleway", sans-serif;
+  margin: 10px 0;
 }
 
 fieldset {
@@ -233,9 +235,11 @@ fieldset legend {
 }
 
 .woocommerce button.button,
-.botao {
+.botao,
+input[type=submit] {
   background: #D4448B;
   color: white;
+  font-size: 16px;
   border: 1px solid #D4448B;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -244,7 +248,8 @@ fieldset legend {
   height: 100%;
 }
 .woocommerce button.button:hover,
-.botao:hover {
+.botao:hover,
+input[type=submit]:hover {
   background: #a52665;
   color: white;
   cursor: pointer;
@@ -966,6 +971,69 @@ th {
   color: #D4448B;
   position: absolute;
   left: 0;
+}
+
+.woocommerce-review-link {
+  color: #D4448B;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+}
+
+#reviews .commentlist .review .comment_container {
+  display: flex;
+  padding: 40px 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+#reviews .commentlist .review .comment_container .texto-review {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 15px;
+}
+#reviews .commentlist .review .comment_container .texto-review .comment-text {
+  width: 100%;
+}
+#reviews .commentlist .review .comment_container .texto-review .comment-text .meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#reviews .commentlist .review .comment_container .texto-review .comment-text .meta .woocommerce-review__author {
+  font-size: 20px;
+}
+#reviews .commentlist .review .comment_container .texto-review .comment-text .description {
+  text-indent: 10px;
+  padding: 15px;
+}
+#reviews .commentlist .review .comment_container .texto-review .star-rating {
+  width: 90px;
+}
+#reviews .commentlist .review .comment_container .avatar {
+  height: 100px;
+  width: auto;
+}
+#reviews #review_form_wrapper {
+  padding: 30px 0;
+}
+#reviews #review_form_wrapper #review_form {
+  width: 50%;
+  margin: 0 auto;
+}
+#reviews #review_form_wrapper #review_form .comment-reply-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6E6E6E;
+  margin-bottom: 25px;
+}
+#reviews #review_form_wrapper #review_form .comment-form {
+  margin: 20px 0;
+}
+#reviews #review_form_wrapper #review_form .comment-form-rating, #reviews #review_form_wrapper #review_form .comment-form-comment {
+  display: flex;
+  flex-direction: column;
+}
+#reviews #review_form_wrapper #review_form .form-submit .submit {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

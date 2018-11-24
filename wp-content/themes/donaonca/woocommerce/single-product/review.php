@@ -34,35 +34,42 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 */
 		do_action( 'woocommerce_review_before', $comment );
 		?>
+		<div class="texto-review">
+			<div class="comment-text">
 
-		<div class="comment-text">
+				<?php
 
+				do_action( 'woocommerce_review_meta', $comment );
+
+
+
+				/**
+				 * The woocommerce_review_meta hook.
+				 *
+				 * @hooked woocommerce_review_display_meta - 10
+				 * @hooked WC_Structured_Data::generate_review_data() - 20
+				 */
+
+				do_action( 'woocommerce_review_before_comment_text', $comment );
+
+				/**
+				 * The woocommerce_review_comment_text hook
+				 *
+				 * @hooked woocommerce_review_display_comment_text - 10
+				 */
+				do_action( 'woocommerce_review_comment_text', $comment );
+
+				do_action( 'woocommerce_review_after_comment_text', $comment ); ?>
+
+			</div>
 			<?php
-			/**
-			 * The woocommerce_review_before_comment_meta hook.
-			 *
-			 * @hooked woocommerce_review_display_rating - 10
-			 */
-			do_action( 'woocommerce_review_before_comment_meta', $comment );
 
-			/**
-			 * The woocommerce_review_meta hook.
-			 *
-			 * @hooked woocommerce_review_display_meta - 10
-			 * @hooked WC_Structured_Data::generate_review_data() - 20
-			 */
-			do_action( 'woocommerce_review_meta', $comment );
-
-			do_action( 'woocommerce_review_before_comment_text', $comment );
-
-			/**
-			 * The woocommerce_review_comment_text hook
-			 *
-			 * @hooked woocommerce_review_display_comment_text - 10
-			 */
-			do_action( 'woocommerce_review_comment_text', $comment );
-
-			do_action( 'woocommerce_review_after_comment_text', $comment ); ?>
-
+					/**
+				 * The woocommerce_review_before_comment_meta hook.
+				 *
+				 * @hooked woocommerce_review_display_rating - 10
+				 */
+				do_action( 'woocommerce_review_before_comment_meta', $comment );
+			?>
 		</div>
 	</div>
