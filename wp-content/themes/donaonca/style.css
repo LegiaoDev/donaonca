@@ -917,6 +917,13 @@ th {
   color: white !important;
 }
 
+.woocommerce-orders-table__cell-order-number a {
+  color: #D4448B;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
 #pagina-login h2 {
   text-align: center;
   margin-bottom: 10px;
