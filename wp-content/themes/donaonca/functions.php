@@ -4,12 +4,21 @@
 	function donaonca_scripts() {
 		wp_enqueue_style('icones', get_template_directory_uri() . '/inc/css/flaticon.css', array(), '1.0.0', 'all', true);
 		wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all', true);
+		wp_enqueue_style('slick', get_template_directory_uri() . '/inc/css/slick.css', array(), '1.0.0', 'all', true);
+		wp_enqueue_style('slick-theme', get_template_directory_uri() . '/inc/css/slick-theme.css', array(), '1.0.0', 'all', true);
 		wp_enqueue_script(
 			'custom-script',
 			get_stylesheet_directory_uri() . '/js/app.js',
 			array( 'jquery' ),
 			true
-		);	}
+		);	
+		wp_enqueue_script(
+			'slick',
+			get_stylesheet_directory_uri() . '/inc/js/slick.min.js',
+			array( 'jquery' ),
+			true
+		);
+	}
 	add_action('wp_enqueue_scripts', 'donaonca_scripts');
 
 	// Suporte woocommerce

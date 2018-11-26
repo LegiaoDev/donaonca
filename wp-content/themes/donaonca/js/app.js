@@ -25,5 +25,17 @@ $(document).ready(()=> {
 			$(areaDescricao).hide();
 		});
 	}
+	$('.banners').slick();
+
+	let fecharMenu = $('#fechar-mobile'),
+	menuMobile = $('.area-menu-mobile'),
+	iconeMobile = $('.icone-mobile');
+
+	$(fecharMenu).click(() => {
+		menuMobile.hide();
+	});
 	
+	$(iconeMobile).click(() => {
+		menuMobile.show();
+	});
 });

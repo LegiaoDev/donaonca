@@ -76,3 +76,11 @@
 		display: grid
 		grid-template-columns: repeat(2,1fr)
 		grid-gap: 5px
+
+@media screen and (max-width: 550px)
+	.valor
+		flex-direction: column
+
+		p, .preco
+			align-self: flex-start
+			margin-left: 0

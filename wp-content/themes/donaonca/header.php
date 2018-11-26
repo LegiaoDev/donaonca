@@ -11,7 +11,7 @@
 	<header>
 		<div class="top-nav-menu">
 			<!-- Logo -->
-			<a href="/"><img src="http://local.donaonca.com/wp-content/uploads/2018/10/logo.png" alt="Logo Dona Onça" class="logo-top-nav-menu"></a>
+			<a href="/"><img src="http://local.donaonca.com/wp-content/uploads/2018/11/logo-sem-slogan.png" alt="Logo Dona Onça" class="logo-top-nav-menu"></a>
 			
 			<!-- Busca -->
 			<?php get_search_form(); ?>
@@ -29,4 +29,25 @@
 			'container_class' => 'menu-principal',
 			'menu_class'      => 'dona-onca-menu'
 		)); ?> 
+
+			<div class="menu-mobile">
+				<div class="container-mobile-menu">
+					<div class="icone-mobile">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		<div class="area-menu-mobile">
+			<span id="fechar-mobile">X</span>
+			<?php wp_nav_menu( array(
+				'theme_location'  => 'principal', 
+				'container_class' => 'menu-principal-mobile',
+				'menu_class'      => 'dona-onca-menu-mobile'
+			)); ?> 
+		</div>
+
+
+		
 	</header>
