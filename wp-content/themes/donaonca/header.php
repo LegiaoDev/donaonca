@@ -11,7 +11,7 @@
 	<header>
 		<div class="top-nav-menu">
 			<!-- Logo -->
-			<a href="/"><img src="http://local.donaonca.com/wp-content/uploads/2018/11/logo-sem-slogan.png" alt="Logo Dona Onça" class="logo-top-nav-menu"></a>
+			<a href="/"><img src="https://donaonca.shop/wp-content/uploads/2018/11/logo-sem-slogan-1.png" alt="Logo Dona Onça" class="logo-top-nav-menu"></a>
 			
 			<!-- Busca -->
 			<?php get_search_form(); ?>

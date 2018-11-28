@@ -5,11 +5,11 @@
     *************************
     -->
     <div class="banners"><!-- Abre banners -->
-        <div class="banner" id="banner1"><a href="#"><img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner.png" alt=""></a></div>
+        <div class="banner" id="banner1"><a href="#"><img src="https://donaonca.shop/wp-content/uploads/2018/11/banner.png" alt=""></a></div>
 
-        <div class="banner" id="banner2"><a href=""><img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner.png" alt=""></a></div>
+        <div class="banner" id="banner2"><a href=""><img src="https://donaonca.shop/wp-content/uploads/2018/11/banner.png" alt=""></a></div>
 
-        <div class="banner" id="banner3"><a href=""><img src="http://local.donaonca.com/wp-content/uploads/2018/10/banner.png" alt=""></a></div>
+        <div class="banner" id="banner3"><a href=""><img src="https://donaonca.shop/wp-content/uploads/2018/11/banner.png" alt=""></a></div>
     </div><!-- Fecha banners -->
 
     <div class="container"> <!-- Abre container -->
