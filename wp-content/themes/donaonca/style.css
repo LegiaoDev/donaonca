@@ -704,14 +704,20 @@ th {
   font-size: 18px;
 }
 
-.botao-single-product {
+.woocommerce-variation-add-to-cart {
+  margin-top: 15px;
+}
+
+.botao-single-product,
+.woocommerce-variation-add-to-cart {
   display: grid;
   grid-template-columns: 40px 150px;
   grid-gap: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid #aaaaaa;
 }
-.botao-single-product button {
+.botao-single-product button,
+.woocommerce-variation-add-to-cart button {
   background: #D4448B;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -723,15 +729,18 @@ th {
   border-radius: 4px;
   background-clip: padding-box;
 }
-.botao-single-product button:hover {
+.botao-single-product button:hover,
+.woocommerce-variation-add-to-cart button:hover {
   background: #a52665;
   border-color: #a52665;
   cursor: pointer;
 }
-.botao-single-product .quantity {
+.botao-single-product .quantity,
+.woocommerce-variation-add-to-cart .quantity {
   width: 100%;
 }
-.botao-single-product .quantity input {
+.botao-single-product .quantity input,
+.woocommerce-variation-add-to-cart .quantity input {
   width: 100%;
   border: 3px solid #D4448B;
   padding: 10px 5px;
@@ -742,7 +751,8 @@ th {
   font-weight: bold;
   text-align: center;
 }
-.botao-single-product .quantity input:focus {
+.botao-single-product .quantity input:focus,
+.woocommerce-variation-add-to-cart .quantity input:focus {
   border: 3px solid #D4448B;
 }
 
@@ -1291,6 +1301,17 @@ th {
 }
 .variations .value .reset_variations {
   display: none;
+}
+.variations select {
+  width: 100%;
+  border: 1px solid #D4448B;
+  padding: 5px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  font-size: 16px;
+  text-align: center;
+  color: #6E6E6E;
 }
 
 /*# sourceMappingURL=style.css.map */
