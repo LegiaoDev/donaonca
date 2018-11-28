@@ -774,11 +774,15 @@ th {
   font-family: "Roboto", sans-serif;
 }
 
-#tab-description, #tab-reviews {
+#tab-description, #tab-reviews, #tab-additional_information {
   padding: 10px 30px;
   font-family: "Roboto", sans-serif;
   width: 95%;
   margin: 0 auto;
+}
+
+#tab-additional_information .shop_attributes tbody tr th {
+  padding-right: 10px;
 }
 
 .product_meta {
@@ -1280,6 +1284,13 @@ th {
 }
 .woocommerce-info::before {
   color: white;
+}
+
+.variations .label {
+  padding-right: 15px;
+}
+.variations .value .reset_variations {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,11 +3,15 @@ const $ = jQuery;
 $(document).ready(()=> {
 	let descricao = document.querySelector('#tab-title-description a'),
 	avaliacao = document.querySelector('#tab-title-reviews a'),
-	areaAvaliacao = document.querySelector('#tab-reviews');
-	areaDescricao = document.querySelector('#tab-description');
+	informacaoExtra = document.querySelector('#tab-title-additional_information a'),
+	areaAvaliacao = document.querySelector('#tab-reviews'),
+	areaDescricao = document.querySelector('#tab-description'),
+	areaInformacaoExtra = document.querySelector('#tab-additional_information');
+
 
 	
 	$(areaAvaliacao).hide();
+	$(areaInformacaoExtra).hide();
 
 	
 	if(descricao != null) {
@@ -15,6 +19,7 @@ $(document).ready(()=> {
 			e.preventDefault();
 			$(areaAvaliacao).hide();
 			$(areaDescricao).show();
+			$(areaInformacaoExtra).hide();
 		});
 	}
 	
@@ -23,6 +28,15 @@ $(document).ready(()=> {
 			e.preventDefault();
 			$(areaAvaliacao).show();
 			$(areaDescricao).hide();
+			$(areaInformacaoExtra).hide();
+		});
+	}
+	if(informacaoExtra != null) {
+		informacaoExtra.addEventListener('click', (e) => {
+			e.preventDefault();
+			$(areaInformacaoExtra).show();
+			$(areaDescricao).hide();
+			$(areaAvaliacao).hide();
 		});
 	}
 	$('.banners').slick();
