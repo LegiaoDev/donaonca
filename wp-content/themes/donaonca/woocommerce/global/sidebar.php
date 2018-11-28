@@ -19,7 +19,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
+?>
+<aside class="sidebar">
+<?php
 dynamic_sidebar( 'sidebar1' );
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+?>
+</aside>

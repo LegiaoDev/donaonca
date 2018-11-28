@@ -1314,4 +1314,31 @@ th {
   color: #6E6E6E;
 }
 
+.sidebar {
+  list-style: none;
+  border: 1px solid #eeeeee;
+  padding: 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+.sidebar li a {
+  color: #6E6E6E;
+  font-weight: bold;
+}
+.sidebar li .product_list_widget li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebar li .product_list_widget li a {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-categoria {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-gap: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
