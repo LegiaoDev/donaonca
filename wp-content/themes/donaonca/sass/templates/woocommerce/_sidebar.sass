@@ -2,21 +2,52 @@
 	list-style: none
 	border: 1px solid $cinza-muito-claro
 	padding: 15px
-	width: 100%
 	font-family: $raleway
 
 	li
+		border-bottom: 1px solid $cinza-muito-claro
+		padding: 5px 0
 		a
 			color: $cinza
-			font-weight: bold	
+			font-size: 14px
 
+		.widgettitle
+			font-size: 18px
+			font-weight: bold
+			margin: 10px 0
+
+		.product-categories
+
+			li
+				border: none
 		.product_list_widget
 
 			li
 				display: flex
 				flex-direction: column
 				align-items: flex-start
+				border: none
 
 				a
 					display: flex
 					flex-direction: column
+
+
+.widget_product_search
+
+	.formBusca
+		width: 100%
+		border: 1px solid $cinza
+		+border-radius(4px)
+
+		form.woocommerce-product-search
+			width: 100%
+			display: flex
+			align-items: center
+
+			[class^="flaticon-"]:before, [class*=" flaticon-"]:before
+				margin-left: 10px
+
+			.search-field
+				width: 100%
+				border: none

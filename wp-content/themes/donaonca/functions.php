@@ -27,7 +27,6 @@
 	}
 	add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
-
 	// Menus
 	register_nav_menus(array(
 		'principal' => __( 'Menu Principal' )

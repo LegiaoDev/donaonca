@@ -1,0 +1,42 @@
+2018-11-29T02:13:43+00:00 CRITICAL syntax error, unexpected '**' (T_POW) in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php on line 38
+
+2018-11-29T02:19:57+00:00 CRITICAL syntax error, unexpected '?>' in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php on line 35
+
+2018-11-29T02:32:26+00:00 CRITICAL syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\functions.php on line 78
+
+2018-11-29T02:32:38+00:00 CRITICAL Uncaught Error: Using $this when not in object context in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\functions.php:61
+Stack trace:
+#0 D:\Programas\laragon\www\donaonca\wp-settings.php(426): include()
+#1 D:\Programas\laragon\www\donaonca\wp-config.php(99): require_once('D:\\Programas\\la...')
+#2 D:\Programas\laragon\www\donaonca\wp-load.php(37): require_once('D:\\Programas\\la...')
+#3 D:\Programas\laragon\www\donaonca\wp-blog-header.php(13): require_once('D:\\Programas\\la...')
+#4 D:\Programas\laragon\www\donaonca\index.php(17): require('D:\\Programas\\la...')
+#5 {main}
+  thrown in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\functions.php on line 61
+
+2018-11-29T02:52:13+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_available_variations() in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php:25
+Stack trace:
+#0 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-core-functions.php(208): include()
+#1 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1447): wc_get_template('single-product/...')
+#2 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(286): woocommerce_template_single_price('')
+#3 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 D:\Programas\laragon\www\donaonca\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\templates\content-single-product.php(59): do_action('woocommerce_sin...')
+#6 D:\Programas\laragon\www\donaonca\wp-includes\template.php(690): require('D:\\Programas\\la...')
+#7  in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php on line 25
+
+2018-11-29T02:54:58+00:00 CRITICAL Uncaught Error: Call to a member function get_available_variations() on boolean in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php:26
+Stack trace:
+#0 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-core-functions.php(208): include()
+#1 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1447): wc_get_template('single-product/...')
+#2 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(286): woocommerce_template_single_price('')
+#3 D:\Programas\laragon\www\donaonca\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 D:\Programas\laragon\www\donaonca\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\Programas\laragon\www\donaonca\wp-content\plugins\woocommerce\templates\content-single-product.php(59): do_action('woocommerce_sin...')
+#6 D:\Programas\laragon\www\donaonca\wp-includes\template.php(690): require('D:\\Programas\\la...')
+#7 D:\Prog in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php on line 26
+
+2018-11-29T03:06:14+00:00 CRITICAL syntax error, unexpected end of file in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\price.php on line 49
+
+2018-11-29T03:17:52+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in D:\Programas\laragon\www\donaonca\wp-content\themes\donaonca\woocommerce\single-product\add-to-cart\variable.php on line 43
+

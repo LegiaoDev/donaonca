@@ -1318,27 +1318,62 @@ th {
   list-style: none;
   border: 1px solid #eeeeee;
   padding: 15px;
-  width: 100%;
   font-family: "Raleway", sans-serif;
+}
+.sidebar li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 5px 0;
 }
 .sidebar li a {
   color: #6E6E6E;
+  font-size: 14px;
+}
+.sidebar li .widgettitle {
+  font-size: 18px;
   font-weight: bold;
+  margin: 10px 0;
+}
+.sidebar li .product-categories li {
+  border: none;
 }
 .sidebar li .product_list_widget li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border: none;
 }
 .sidebar li .product_list_widget li a {
   display: flex;
   flex-direction: column;
 }
 
+.widget_product_search .formBusca {
+  width: 100%;
+  border: 1px solid #6E6E6E;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.widget_product_search .formBusca form.woocommerce-product-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.widget_product_search .formBusca form.woocommerce-product-search [class^=flaticon-]:before, .widget_product_search .formBusca form.woocommerce-product-search [class*=" flaticon-"]:before {
+  margin-left: 10px;
+}
+.widget_product_search .formBusca form.woocommerce-product-search .search-field {
+  width: 100%;
+  border: none;
+}
+
 .main-categoria {
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-gap: 40px;
+  grid-gap: 15px;
+}
+.main-categoria .produtos-home-array {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

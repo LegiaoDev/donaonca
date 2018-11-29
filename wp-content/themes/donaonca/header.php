@@ -7,7 +7,7 @@
 	<title><?php bloginfo('name') ?></title>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body >
 	<header>
 		<div class="top-nav-menu">
 			<!-- Logo -->
