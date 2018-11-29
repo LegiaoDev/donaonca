@@ -14,7 +14,7 @@
 			<a href="/"><img src="https://donaonca.shop/wp-content/uploads/2018/11/logo-sem-slogan-1.png" alt="Logo Dona Onça" class="logo-top-nav-menu"></a>
 			
 			<!-- Busca -->
-			<?php get_search_form(); ?>
+			<?php get_product_search_form(); ?>
 
 			<!-- Icones -->
 			<div class="icones-top-menu">

@@ -49,7 +49,7 @@
   align-items: center;
   width: 50vw;
 }
-.top-nav-menu .formBusca div {
+.top-nav-menu .formBusca .woocommerce-product-search {
   width: 90%;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@
   -moz-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.top-nav-menu .formBusca div input {
+.top-nav-menu .formBusca .woocommerce-product-search input {
   width: 90%;
   margin-left: 10px;
   border: 1px solid white;
