@@ -694,6 +694,9 @@ th {
 .woocommerce-product-gallery {
   opacity: 1 !important;
 }
+.woocommerce-product-gallery__wrapper a img {
+  width: 450px;
+}
 
 .produto-unico {
   display: flex;
