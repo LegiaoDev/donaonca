@@ -679,15 +679,20 @@ th {
     display: none;
   }
 }
-.preco-produto,
-.woocommerce-Price-amount.amount {
+.price .woocommerce-Price-amount.amount {
   color: #D4448B;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   font-size: 35px;
 }
-.preco-produto .woocommerce-Price-currencySymbol,
-.woocommerce-Price-amount.amount .woocommerce-Price-currencySymbol {
+
+.preco-produto {
+  color: #D4448B;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+}
+.preco-produto .woocommerce-Price-currencySymbol {
   color: #D4448B;
 }
 
