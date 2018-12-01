@@ -1,0 +1,29 @@
+.woocommerce-pagination
+
+	ul.page-numbers
+		display: flex
+		width: 30%
+		justify-content: space-evenly
+		margin: 0 auto
+
+		li	
+			padding: 10px
+			border: 1px solid $rosa-escuro
+
+			span.current
+				border-bottom: 1px solid $rosa-escuro
+			span.page-numbers,
+			a.page-numbers
+				font-family: $roboto
+				font-weight: bold
+				color: $rosa-escuro
+				text-decoration: none
+
+			&:hover
+				background: $rosa-escuro
+				cursor: pointer
+
+				span.page-numbers,
+				a.page-numbers
+					color: white
+					
