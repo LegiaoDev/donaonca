@@ -342,7 +342,7 @@ input[type=submit]:hover {
 }
 .produtos-home-array .produto a img {
   width: auto;
-  height: 240px;
+  min-height: 240px;
   max-width: 100%;
   margin-bottom: 15px;
 }
@@ -588,7 +588,8 @@ th {
     grid-template-rows: repeat(2, 1fr);
   }
   .consorcio__imagem {
-    background: black;
+    background: url("https://donaonca.shop/wp-content/uploads/2018/12/banner-consorcio.jpg") center center;
+    background: cover;
     height: 100%;
     width: 100%;
   }
