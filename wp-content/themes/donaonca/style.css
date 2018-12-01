@@ -342,7 +342,7 @@ input[type=submit]:hover {
 }
 .produtos-home-array .produto a img {
   width: auto;
-  min-height: 240px;
+  height: 240px;
   max-width: 100%;
   margin-bottom: 15px;
 }
@@ -411,6 +411,10 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
+  }
+  .produtos-home-array .produto a {
+    height: auto;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 550px) {
