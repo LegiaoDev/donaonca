@@ -24,8 +24,8 @@ global $product;
 ?>
 <div class="valor">
 <?php if ( $preco = $product->get_price() ) : 
-	$parcela = floatval( $preco)/4;
+	$parcela = floatval( $preco)/3;
 	?>
-	<p>4x de</p> <p class='preco'> R$ <?php echo number_format($parcela, 2, ',', '. ')?></p>
+	<p>3x de</p> <p class='preco'> R$ <?php echo number_format($parcela, 2, ',', '. ')?></p>
 <?php endif; ?>
 </div>
