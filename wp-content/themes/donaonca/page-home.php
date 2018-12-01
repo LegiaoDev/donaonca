@@ -5,11 +5,10 @@
     *************************
     -->
     <div class="banners"><!-- Abre banners -->
-        <div class="banner" id="banner1"><a href="#"><img src="https://donaonca.shop/wp-content/uploads/2018/11/banner.png" alt=""></a></div>
+        <div class="banner" id="banner1"><img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-1.jpeg" alt=""></div>
 
-        <div class="banner" id="banner2"><a href=""><img src="https://donaonca.shop/wp-content/uploads/2018/11/banner.png" alt=""></a></div>
-
-        <div class="banner" id="banner3"><a href=""><img src="https://donaonca.shop/wp-content/uploads/2018/11/banner.png" alt=""></a></div>
+        <div class="banner" id="banner2"><img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-2.jpeg" alt=""></div>
+        
     </div><!-- Fecha banners -->
 
     <div class="container"> <!-- Abre container -->
@@ -20,10 +19,13 @@
         -->
         <div class="banners-fixos">
             <div class="banner-fixo" id="banner-fixo1">
-                <img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-2.jpeg" alt="">
+                <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
             </div>
             <div class="banner-fixo" id="banner-fixo2">
-                <img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-1.jpeg" alt="">
+                <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
+            </div>
+            <div class="banner-fixo" id="banner-fixo3">
+                <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
             </div>
         </div>
         <!-- 
@@ -60,8 +62,8 @@
                                 <div class="valor">
                                     <?php 
                                         $preco =  $product->get_price();
-                                        $parcela = floatval( $preco)/4;
-                                        echo "<p>4x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                        $parcela = floatval( $preco)/3;
+                                        echo "<p>3x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
                                         // echo gettype($parcela);
                                     ?>
                                 </div>
@@ -107,8 +109,8 @@
                                 <div class="valor">
                                     <?php 
                                         $preco =  $product->get_price();
-                                        $parcela = floatval( $preco)/4;
-                                        echo "<p>4x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
+                                        $parcela = floatval( $preco)/3;
+                                        echo "<p>3x de</p> <p class='preco'> R$ ".number_format($parcela, 2, ',', '. ')."</p>";
                                         // echo gettype($parcela);
                                     ?>
                                 </div>
