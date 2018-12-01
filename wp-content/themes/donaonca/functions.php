@@ -103,18 +103,10 @@
 		jQuery(document).ready(function($) {
 			jQuery('#pa_cor').blur( function(){
 				if( '' != jQuery('input.variation_id').val() ){
-					if(jQuery('p.availability'))
-						jQuery('p.availability').remove();
-					jQuery('p.price').html(jQuery('div.woocommerce-variation-price > span.price').html()).append('<p class="availability">'+jQuery('div.woocommerce-variation-availability').html()+'</p>');
-					console.log(jQuery('input.variation_id').val());
-				} else {
-					jQuery('p.price').html(jQuery('div.hidden-variable-price').html());
-					if(jQuery('p.availability'))
-						jQuery('p.availability').remove();
-					console.log('NULL');
-				}
-			});
 
+					jQuery('p.price').html(jQuery('div.woocommerce-variation-price > span.price').html()+'</p>');
+				} 
+			});
 		});
 		</script>
 		<?php
