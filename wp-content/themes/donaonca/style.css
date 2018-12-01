@@ -286,7 +286,7 @@ input[type=submit]:hover {
 }
 
 .banners-fixos {
-  display: none;
+  display: none !important;
 }
 .banners-fixos .banner-fixo {
   max-width: 100%;
@@ -307,12 +307,14 @@ input[type=submit]:hover {
   .banners-fixos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    display: none !important;
   }
 }
 @media screen and (max-width: 600px) {
   .banners-fixos {
     display: grid;
     grid-template-columns: 1fr;
+    display: none !important;
   }
 }
 .produtos-home-array {
