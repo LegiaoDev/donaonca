@@ -20,19 +20,10 @@
         -->
         <div class="banners-fixos">
             <div class="banner-fixo" id="banner-fixo1">
-                <a href="#">
-                    <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
-                </a>
+                <img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-2.jpeg" alt="">
             </div>
             <div class="banner-fixo" id="banner-fixo2">
-                <a href="#">
-                    <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
-                </a>
-            </div>
-            <div class="banner-fixo" id="banner-fixo2">
-                <a href="#">
-                    <img src="http://local.donaonca.com/wp-content/uploads/2018/11/banner-estreito.png" alt="">
-                </a>
+                <img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-1.jpeg" alt="">
             </div>
         </div>
         <!-- 
@@ -41,10 +32,10 @@
         *************************
         -->
         <div class="titulo-secao">
-            <h2 class="titulo-lista-produto">Lançamentos</h2>
+            <h2 class="titulo-lista-produto">Novidades</h2>
             <span class="barra-titulo"></span>
         </div>
-        <div class="produtos-home-array" id="lancamentos">
+        <div class="produtos-home-array" id="novidades">
             <?php
                 $args = array(
                     'post_type' => 'product',
@@ -91,7 +82,7 @@
             <h2 class="titulo-lista-produto">Mais vendidos</h2>
             <span class="barra-titulo"></span>
         </div>
-        <div class="produtos-home-array" id="lancamentos">
+        <div class="produtos-home-array" id="mais-vendidos">
             <?php
                 $args = array(
                     'post_type' => 'product',
@@ -152,7 +143,7 @@
         -->
     <div class="container consorcio">
         <div class="consorcio__imagem">
-            <p class="consorcio__imagem__texto">Participe do Consórcio</p>
+            <!-- <p class="consorcio__imagem__texto">Participe do Consórcio</p> -->
         </div>
         <div class="consorcio__area-form">
             <h3 class="consorcio__area-form__titulo">Faça parte!</h3>

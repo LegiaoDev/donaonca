@@ -534,7 +534,7 @@ th {
   grid-template-columns: 60% 40%;
 }
 .consorcio__imagem {
-  background: black;
+  background: url("https://donaonca.shop/wp-content/uploads/2018/12/consorcio.jpeg");
   position: relative;
 }
 .consorcio__imagem__texto {
