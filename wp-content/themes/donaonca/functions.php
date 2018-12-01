@@ -103,9 +103,14 @@
 		jQuery(document).ready(function($) {
 			jQuery('#pa_cor').blur( function(){
 				if( '' != jQuery('input.variation_id').val() ){
-
-					jQuery('p.price').html(jQuery('div.woocommerce-variation-price > span.price').html()+'</p>');
-				} 
+					if(jQuery('p.availability'))
+						jQuery('p.availability').remove();
+					jQuery('p.price').html(jQuery('div.woocommerce-variation-price > span.price').html()).append('<p class="availability">'+jQuery('div.woocommerce-variation-availability').html()+'</p>');
+					console.log(jQuery('input.variation_id').val());
+				}
+			});
+			jQuery('#pa_cor').change(() => {
+				jQuery('p.stock').first().remove();
 			});
 		});
 		</script>
