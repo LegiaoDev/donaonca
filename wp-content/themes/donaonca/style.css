@@ -592,8 +592,8 @@ th {
     grid-template-rows: repeat(2, 1fr);
   }
   .consorcio__imagem {
-    background: url("https://donaonca.shop/wp-content/uploads/2018/12/banner-consorcio.jpg") center center;
-    background: cover;
+    background: url("https://donaonca.shop/wp-content/uploads/2018/12/banner-consorcio.jpg") left center;
+    background-size: cover;
     height: 100%;
     width: 100%;
   }
