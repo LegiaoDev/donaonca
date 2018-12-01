@@ -314,7 +314,7 @@ input[type=submit]:hover {
 .produtos-home-array {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 .produtos-home-array .produto {
   display: inline-block;
@@ -371,7 +371,7 @@ input[type=submit]:hover {
 }
 .valor .preco {
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   color: #D4448B;
   text-decoration: none;
@@ -381,7 +381,7 @@ input[type=submit]:hover {
 
 .woocommerce-loop-product__title {
   color: #6E6E6E;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -679,11 +679,16 @@ th {
     display: none;
   }
 }
-.preco-produto {
+.preco-produto,
+.woocommerce-Price-amount.amount {
   color: #D4448B;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   font-size: 35px;
+}
+.preco-produto .woocommerce-Price-currencySymbol,
+.woocommerce-Price-amount.amount .woocommerce-Price-currencySymbol {
+  color: #D4448B;
 }
 
 .woocommerce-product-gallery {
@@ -1299,8 +1304,15 @@ th {
 .variations .label {
   padding-right: 15px;
 }
+.variations .value {
+  display: flex;
+  align-items: center;
+}
 .variations .value .reset_variations {
-  display: none;
+  color: #D4448B;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  margin-left: 15px;
 }
 .variations select {
   width: 100%;
