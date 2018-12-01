@@ -56,7 +56,7 @@
 	remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating',5);
 
 
-	
+
 
 	add_action( 'woocommerce_before_single_product', 'move_variations_single_price', 1 );
 	function move_variations_single_price(){
@@ -101,7 +101,7 @@
 		</style>
 		<script>
 		jQuery(document).ready(function($) {
-			$('select').blur( function(){
+			$('#pa_cor').blur( function(){
 				if( '' != $('input.variation_id').val() ){
 					if($('p.availability'))
 						$('p.availability').remove();
