@@ -5,9 +5,9 @@
     *************************
     -->
     <div class="banners"><!-- Abre banners -->
-        <div class="banner" id="banner1"><img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-1.jpeg" alt=""></div>
+        <div class="banner" id="banner1"><img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-batom.jpg" alt=""></div>
 
-        <div class="banner" id="banner2"><img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-2.jpeg" alt=""></div>
+        <div class="banner" id="banner2"><img src="https://donaonca.shop/wp-content/uploads/2018/12/banner-maquiagem.jpg" alt=""></div>
         
     </div><!-- Fecha banners -->
 
