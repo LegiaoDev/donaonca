@@ -101,19 +101,20 @@
 		</style>
 		<script>
 		jQuery(document).ready(function($) {
-			$('#pa_cor').blur( function(){
-				if( '' != $('input.variation_id').val() ){
-					if($('p.availability'))
-						$('p.availability').remove();
-					$('p.price').html($('div.woocommerce-variation-price > span.price').html()).append('<p class="availability">'+$('div.woocommerce-variation-availability').html()+'</p>');
-					console.log($('input.variation_id').val());
+			jQuery('#pa_cor').blur( function(){
+				if( '' != jQuery('input.variation_id').val() ){
+					if(jQuery('p.availability'))
+						jQuery('p.availability').remove();
+					jQuery('p.price').html(jQuery('div.woocommerce-variation-price > span.price').html()).append('<p class="availability">'+jQuery('div.woocommerce-variation-availability').html()+'</p>');
+					console.log(jQuery('input.variation_id').val());
 				} else {
-					$('p.price').html($('div.hidden-variable-price').html());
-					if($('p.availability'))
-						$('p.availability').remove();
+					jQuery('p.price').html(jQuery('div.hidden-variable-price').html());
+					if(jQuery('p.availability'))
+						jQuery('p.availability').remove();
 					console.log('NULL');
 				}
 			});
+
 		});
 		</script>
 		<?php
