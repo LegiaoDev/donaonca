@@ -413,7 +413,7 @@ input[type=submit]:hover {
     grid-gap: 5px;
   }
   .produtos-home-array .produto a {
-    height: auto;
+    height: auto !important;
     max-width: 100%;
   }
 }
@@ -696,15 +696,15 @@ th {
   font-family: "Roboto", sans-serif;
   font-size: 35px;
 }
+.price .woocommerce-Price-amount.amount .woocommerce-Price-currencySymbol {
+  color: #D4448B;
+}
 
 .preco-produto {
   color: #D4448B;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   font-size: 35px;
-}
-.preco-produto .woocommerce-Price-currencySymbol {
-  color: #D4448B;
 }
 
 .woocommerce-product-gallery {
