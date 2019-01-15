@@ -322,6 +322,7 @@ input[type=submit]:hover {
   position: relative;
   transition: all 200ms ease-in;
   transform: scale(1);
+  text-align: center;
 }
 .produtos-home-array .produto:hover {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -352,6 +353,14 @@ input[type=submit]:hover {
 }
 .produtos-home-array .produto a img, .produtos-home-array .produtos-categoria .produto a img {
   height: 180px;
+}
+.produtos-home-array .produto:hover, .produtos-home-array .produtos-categoria .produto:hover {
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: all 200ms ease-in;
+  transform: scale(1.02);
 }
 
 .texto-produto {
