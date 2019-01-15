@@ -1,14 +1,9 @@
 @charset "UTF-8";
 /*!
- *
  * Theme Name: Dona Onça
- *
  * Author: Gabriel Antonio
- *
  * Description: Tema para e-commerce do site Dona Onça
- *
  * Version: 0.0.1
- *
  * */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,900");
@@ -413,7 +408,7 @@ input[type=submit]:hover {
     grid-gap: 5px;
   }
   .produtos-home-array .produto a img {
-    height: auto !important;
+    height: auto;
     max-width: 100%;
   }
 }
@@ -696,15 +691,15 @@ th {
   font-family: "Roboto", sans-serif;
   font-size: 35px;
 }
-.price .woocommerce-Price-amount.amount .woocommerce-Price-currencySymbol {
-  color: #D4448B;
-}
 
 .preco-produto {
   color: #D4448B;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   font-size: 35px;
+}
+.preco-produto .woocommerce-Price-currencySymbol {
+  color: #D4448B;
 }
 
 .woocommerce-product-gallery {
