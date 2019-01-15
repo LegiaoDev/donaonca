@@ -20,4 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<ul class="products produtos-home-array columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<ul class="products produtos-home-array produtos-categoria columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">

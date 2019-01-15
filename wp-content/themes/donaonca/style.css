@@ -350,6 +350,9 @@ input[type=submit]:hover {
 .produtos-home-array .produto .add_to_cart_button {
   display: none;
 }
+.produtos-home-array .produto a img, .produtos-home-array .produtos-categoria .produto a img {
+  height: 180px;
+}
 
 .texto-produto {
   padding: 15px 10px;
