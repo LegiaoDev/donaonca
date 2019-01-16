@@ -720,6 +720,9 @@ th {
 .woocommerce-product-gallery__wrapper a img {
   width: 450px;
 }
+.woocommerce-product-gallery .flex-produto img {
+  width: auto !important;
+}
 
 .produto-unico {
   display: flex;
